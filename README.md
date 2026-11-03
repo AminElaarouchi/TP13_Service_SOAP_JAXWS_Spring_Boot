@@ -14,3 +14,17 @@ Le WSDL est à `http://localhost:8082/services/ws?wsdl`. Importez-le dans SoapUI
 Pour utiliser le client Android du TP14, démarrez ce serveur puis pointez l’émulateur vers `http://10.0.2.2:8082/services/ws`. Le nom d’espace SOAP de ce service est `http://ws.demo.example.com/`.
 
 Les imports JPA/JAX-WS utilisent Jakarta, conformément à Spring Boot 3. Le port et le chemin CXF sont fixés explicitement afin que l'URL du WSDL corresponde à la configuration.
+
+## Résultat vérifié
+
+Commande exécutée le 3 novembre 2026 :
+
+```powershell
+mvn -B test
+```
+
+1 test d’intégration du service SOAP réussi avec H2 (0 échec).
+
+![Résultat de la vérification dans le terminal](docs/verification-terminal.png)
+
+L’image est une transcription visuelle de la sortie réelle de vérification ; la capture native de la fenêtre du terminal n’était pas disponible dans cet environnement.
